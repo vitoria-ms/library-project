@@ -8,8 +8,8 @@ import jakarta.persistence.*;
 
 /*
  A ser feito:
--mapeamento das tabelas com o entity
--definir tamanho do campos e se são obrigatórios 
+-mapeamento das tabelas com o entity V
+-definir tamanho do campos e se são obrigatórios V 
 -relacionar
 
 */
