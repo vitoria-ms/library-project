@@ -10,4 +10,4 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-}
+}//metodo para testarv no terminal objeto do tipo funcionario_service, chamnado e mandando salvar

@@ -11,7 +11,7 @@ import java.util.List;
 @Table(name = "LIVROS")
 
 public class Livro {
-    @Id
+   
     private String autor;
     private String isbn;
     private String dataPublicacao;

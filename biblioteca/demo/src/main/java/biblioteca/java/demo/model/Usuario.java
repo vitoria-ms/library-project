@@ -10,7 +10,6 @@ import java.util.List;
 
 
 public class Usuario {
-    @Id
     private String nome;
     private String cpf;
     private String senha;

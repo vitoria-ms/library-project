@@ -11,7 +11,7 @@ import jakarta.persistence.Table;
 
 
     public class Funcionario extends Usuario {
-        @Id
+      
         private String dataAdmissao;
         private String formacaoAcademica;
         private boolean dadosBancarios;

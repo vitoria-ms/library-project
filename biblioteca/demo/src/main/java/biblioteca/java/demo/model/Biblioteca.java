@@ -5,20 +5,20 @@ import java.util.List;
 import jakarta.persistence.*;
 
 
-
+// apagar
 /*
  A ser feito:
--mapeamento das tabelas com o entity V
+-mapeamento das tabelas V
 -definir tamanho do campos e se são obrigatórios V 
 -relacionar
-
+-Colocar metodos em service, tirar biblioteca.
+-Criar os services.
 */
 
 @Entity
 @Table(name = "BIBLIOTECA")
 
    public class Biblioteca extends AbstractEntity<Long>{
-    @Id
 
     @Column(nullable = false, unique = true, length = 60)
 

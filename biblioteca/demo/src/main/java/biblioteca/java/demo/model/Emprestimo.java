@@ -8,7 +8,7 @@ import java.util.List;
 @Table(name = "EMPRESTIMOS")
 
 public class Emprestimo {
-    @Id
+  
     private String dataEmprestimo;
     private String dataDevolucao;
 

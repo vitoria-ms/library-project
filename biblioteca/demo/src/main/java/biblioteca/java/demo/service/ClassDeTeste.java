@@ -3,3 +3,4 @@ package biblioteca.java.demo.service;
 public class ClassDeTeste {
     
 }
+// cahamar repositorio private  e colocar os metodos (adicionar, excluir, realizar), CRUD.
