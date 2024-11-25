@@ -1,4 +1,5 @@
-package biblioteca.java.demo.model;
+//Comentario para testar sem a classe Biblioteca.
+/*package biblioteca.java.demo.model;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,14 +7,14 @@ import jakarta.persistence.*;
 
 
 // apagar
-/*
+
  A ser feito:
 -mapeamento das tabelas V
 -definir tamanho do campos e se são obrigatórios V 
 -relacionar
 -Colocar metodos em service, tirar biblioteca.
 -Criar os services.
-*/
+
 
 @Entity
 @Table(name = "BIBLIOTECA")
@@ -91,3 +92,5 @@ import jakarta.persistence.*;
         return null;
     }
 }
+
+*/
