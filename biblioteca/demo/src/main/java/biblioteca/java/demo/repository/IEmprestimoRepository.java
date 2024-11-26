@@ -8,5 +8,5 @@ import biblioteca.java.demo.repository.Emprestimo;
 
 
 public interface IEmprestimoRepository extends JpaRepository<Emprestimo, Long>{
-    
+    private List<Emprestimo> findByBetweendataEmprestimo(); 
 }

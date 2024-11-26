@@ -41,3 +41,5 @@ public class UsuarioService {
     }
     
 }
+
+// colocar cascedby no relacionamento e colocar usuario comum e funcionario

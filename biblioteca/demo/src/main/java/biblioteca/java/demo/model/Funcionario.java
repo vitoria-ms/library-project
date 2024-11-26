@@ -16,6 +16,10 @@ import jakarta.persistence.Table;
         private String formacaoAcademica;
         private boolean dadosBancarios;
         private String cargo;
+        @OneToMany
+        @JoinColumn (name= "id_funcionario_fk");
+    
+        private Usuario usuario;
 
     //Getter e setter
     public String getDataAdmissao() {
