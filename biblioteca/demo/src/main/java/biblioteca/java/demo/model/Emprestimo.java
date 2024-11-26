@@ -15,8 +15,14 @@ public class Emprestimo {
     @ManyToOne
     @JoinColumn(name = "usuario_nome")
     private Usuario usuario;
+
+    @OneToMany 
+    @JoinColumn (name= "id_emprestimo_fk");
+    private Usuario usuario;
+
     @Column (nullable = true, unique = false, length = 60 )
     private Livro livro;
+
     @Column(nullable = true, unique= false, length = 60)
     private double multa;
     

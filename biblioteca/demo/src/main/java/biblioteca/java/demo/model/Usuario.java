@@ -18,6 +18,7 @@ public class Usuario {
     private String dataNasc;
     private int idUsuario;
 
+
     //get e set
     public String getNome() {
         return nome;

@@ -17,7 +17,11 @@ public class Livro {
     private String dataPublicacao;
     private String titulo;
     private boolean disponibilidade;
-    
+
+    @OneToMany
+    @JoinColumn (name= "id_livro_fk");
+    private Usuario usuario;    
+
     //get e set
     public String getAutor() {
         return autor;
