@@ -41,49 +41,35 @@ public class DemoApplication {
 			e.seteDataEmprestimo("12/08/2022");
 			e.seteDataDevolucao("12/08/2022");
 
-			/*e.setCpf("999.999.999-99");
-			e.setDataCadastro(LocalDate.now());
-			e.setDataNasc(LocalDate.of(2006, 9, 19));
-			e.setTelefone("(77) 99999-9999");
-			e.setSenha("askdasda");
-			*/
+			
 			emp.salvar(e);
 
-			//System.out.println(e.buscarTodos());
 		
 
 			Funcionario f = new Funcionario();
-			f.setDataAdmissao("eduardo@gmail.com");
-			f.setFormacaoAcademica(new BigDecimal("1200.00"));
-			f.setCargo("Cabeleleiro");
+			f.setDataAdmissao("10/02/2023");
+			f.setFormacaoAcademica("Superior");
+			f.setCargo("Assistente");
 
 			fun.salvar(f);
 
-			//System.out.println(func.buscarTodos());
 
 			Livro l = new Livro();
-			l.setAutor("corte + barba");
-			l.setIsbn("dsadasdasdasdadsasda");
-			l.setDataPublicacao(new BigDecimal("40.00"));
-			l.setTitulo(new BigDecimal("40.00"));
-			l.setDisponibilidade(new BigDecimal("40.00"));
+			l.setAutor("J. K. Rowling");
+			l.setIsbn("154984157");
+			l.setDataPublicacao("14/03/2011");
+			l.setTitulo("Harry Potter");
 
 			liv.salvar(l);
 
-			//System.out.println(liv.buscarTodos());
-
-		;
-
-			List<Servico> listaServicos = new ArrayList<>();
-			listaServicos.add(s);
-			listaServicos.add(s1);
+			
 
 			UsuarioComum us = new UsuarioComum();
-			u.setCampusEnsino(c);
-			u.setMatricula();
+			u.setCampusEnsino("Brumado");
+			u.setMatricula("202115210018");
 		
 			usc.salvar(us);
-			//System.out.println(agend.buscarTodas());
+			
 
 			Usuario u = new Usuario();
 			us.setNome("Denilson Costa");
@@ -92,8 +78,9 @@ public class DemoApplication {
 			us.setTelefone("(77) 95555-1073");
 			us.setEmail("denilson.dev@artia.com.br");
 			us.dataNasc("24/04/2006");
+
 			usu.salvar(u);
-			//System.out.println(serv.buscarTodos())
+			
 			
 		};
 	}
