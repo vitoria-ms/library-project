@@ -1,8 +1,6 @@
 package biblioteca.java.demo.model;
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "EMPRESTIMOS")
@@ -17,8 +15,8 @@ public class Emprestimo {
     private Usuario usuario;
 
     @OneToMany 
-    @JoinColumn (name= "id_emprestimo_fk");
-    private Usuario usuario;
+    @JoinColumn (name= "id_emprestimo_fk")
+    private Usuario usuario1;
 
     @Column (nullable = true, unique = false, length = 60 )
     private Livro livro;

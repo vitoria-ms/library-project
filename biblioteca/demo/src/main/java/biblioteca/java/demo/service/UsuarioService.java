@@ -1,4 +1,5 @@
-package com.example.biblioteca.service;
+
+package biblioteca.java.demo.service;
 
 import java.util.List;
 
@@ -6,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.ifbademo.model.Usuario;
-import com.example.ifbademo.repository.IUsuarioRepository;
+import biblioteca.java.demo.model.Usuario;
+import biblioteca.java.demo.repository.IUsuarioRepository;
 
 
 
@@ -39,7 +40,6 @@ public class UsuarioService {
     public List<Usuario> buscarTodas(){
         return repository.findAll();
     }
+
     
 }
-
-// colocar cascedby no relacionamento e colocar usuario comum e funcionario

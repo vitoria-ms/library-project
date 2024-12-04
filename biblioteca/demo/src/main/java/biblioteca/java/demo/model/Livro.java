@@ -1,11 +1,6 @@
 package biblioteca.java.demo.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
-
-import java.util.ArrayList;
-import java.util.List;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "LIVROS")
@@ -19,7 +14,7 @@ public class Livro {
     private boolean disponibilidade;
 
     @OneToMany
-    @JoinColumn (name= "id_livro_fk");
+    @JoinColumn (name= "id_livro_fk")
     private Usuario usuario;    
 
     //get e set

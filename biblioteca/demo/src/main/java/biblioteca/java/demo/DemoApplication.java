@@ -1,11 +1,5 @@
 package biblioteca.java.demo;
 
-import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,25 +10,27 @@ import biblioteca.java.demo.model.Emprestimo;
 import biblioteca.java.demo.model.Funcionario;
 import biblioteca.java.demo.model.Livro;
 import biblioteca.java.demo.model.UsuarioComum;
+import biblioteca.java.demo.service.EmprestimoService;
+import biblioteca.java.demo.service.FuncionarioService;
+import biblioteca.java.demo.service.LivroService;
+import biblioteca.java.demo.service.UsuarioComumService;
+import biblioteca.java.demo.service.UsuarioService;
 import biblioteca.java.demo.model.Usuario;
-import biblioteca.java.demo.service.Emprestimo;
-import biblioteca.java.demo.service.Funcionario;
-import biblioteca.java.demo.service.Livro;
-import biblioteca.java.demo.service.UsuarioComum;
-import biblioteca.java.demo.service.Usuario;
 
 
 @SpringBootApplication
-public class DemoApplication {
+public class DemoApplication 
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-}
 
-@Bean
-	public CommandLineRunner demo (EmprestimoService emp, FuncionarioService fun, LivroService liv, UsuarioComumService usc, UsuarioService usu){
+    @Bean
+    CommandLineRunner demo(EmprestimoService emp, FuncionarioService fun, LivroService liv, UsuarioComumService usc, UsuarioService usu)
+	{
 		return(args) ->{
 
 			Emprestimo e = new Emprestimo();
@@ -64,24 +60,26 @@ public class DemoApplication {
 
 			
 
-			UsuarioComum us = new UsuarioComum();
-			u.setCampusEnsino("Brumado");
-			u.setMatricula("202115210018");
-		
-			usc.salvar(us);
 			
 
-			Usuario u = new Usuario();
+			UsuarioComum uc = new UsuarioComum();
+			uc.setCampusEnsino("Brumado");
+			uc.setMatricula("202115210018");
+		
+			usc.salvar(uc);
+
+			Usuario us = new Usuario();
 			us.setNome("Denilson Costa");
 			us.setCpf("444.555.666-77");
 			us.setSenha("321123d");
 			us.setTelefone("(77) 95555-1073");
 			us.setEmail("denilson.dev@artia.com.br");
-			us.dataNasc("24/04/2006");
+			us.setDataNasc("24/04/2006");
 
-			usu.salvar(u);
+			usu.salvar(us);
 			
 			
 		};
 	}
 
+}

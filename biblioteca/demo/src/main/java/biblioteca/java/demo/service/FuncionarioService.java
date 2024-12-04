@@ -1,4 +1,5 @@
-package com.example.biblioteca.service;
+
+package biblioteca.java.demo.service;
 
 import java.util.List;
 
@@ -6,8 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.ifbademo.model.Funcionario;
-import com.example.ifbademo.repository.IFuncionarioRepository;
+
+
+import biblioteca.java.demo.model.Funcionario;
+import biblioteca.java.demo.repository.IFuncionarioRepository;
 
 
 

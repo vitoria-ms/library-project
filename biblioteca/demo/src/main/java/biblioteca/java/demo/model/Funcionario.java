@@ -1,10 +1,6 @@
 package biblioteca.java.demo.model;
-import java.util.ArrayList;
-import java.util.List;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name= "FUNCIONARIOS" )
@@ -18,7 +14,7 @@ import jakarta.persistence.Table;
         private String cargo;
 
         @OneToMany
-        @JoinColumn (name= "id_funcionario_fk");
+        @JoinColumn (name= "id_funcionario_fk")
         private Usuario usuario;
 
     //Getter e setter
