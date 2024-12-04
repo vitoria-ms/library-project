@@ -12,7 +12,7 @@ import java.util.List;
 
 
 public class UsuarioComum extends Usuario {
-    @Id
+    
     private String campusEnsino;
     private String matricula;
     private String status;
