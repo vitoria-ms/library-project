@@ -38,8 +38,8 @@ public class DemoApplication {
 		return(args) ->{
 
 			Emprestimo e = new Emprestimo();
-			e.seteDataEmprestimo("12/08/2022");
-			e.seteDataDevolucao("12/08/2022");
+			e.setDataEmprestimo("12/08/2022");
+			e.setDataDevolucao("12/08/2022");
 
 			
 			emp.salvar(e);
