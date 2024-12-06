@@ -1,11 +1,15 @@
 package biblioteca.java.demo.model;
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
 
 
 @Entity
 @Table(name = "EMPRESTIMOS")
 
-public class Emprestimo {
+public class Emprestimo extends AbstractEntity<Long> {
   
     private String dataEmprestimo;
     private String dataDevolucao;
@@ -14,9 +18,6 @@ public class Emprestimo {
     @JoinColumn(name = "usuario_nome")
     private Usuario usuario;
 
-    @OneToMany 
-    @JoinColumn (name= "id_emprestimo_fk")
-    private Usuario usuario1;
 
     @Column (nullable = true, unique = false, length = 60 )
     private Livro livro;

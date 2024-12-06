@@ -8,14 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-
 import biblioteca.java.demo.model.Emprestimo;
 import biblioteca.java.demo.repository.IEmprestimoRepository;
 
 
 
 @Service
-@Transactional(readOnly = true)
+@Transactional(readOnly = false)
 public class EmprestimoService {
     @Autowired
     private IEmprestimoRepository repository;

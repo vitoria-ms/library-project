@@ -25,7 +25,8 @@ public abstract class AbstractEntity<ID extends Serializable> implements Seriali
         result = prime * result + ((id == null) ? 0 : id.hashCode());
         return result;
     }
-//teste
+
+    
     @Override
     public boolean equals(Object obj) {
         if (this == obj)

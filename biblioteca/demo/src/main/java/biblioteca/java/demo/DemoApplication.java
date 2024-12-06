@@ -35,7 +35,7 @@ public class DemoApplication
 
 			Emprestimo e = new Emprestimo();
 			e.setDataEmprestimo("12/08/2022");
-			e.setDataDevolucao("12/08/2022");
+			e.setDataDevolucao("19/08/2022");
 
 			
 			emp.salvar(e);

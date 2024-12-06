@@ -1,9 +1,12 @@
 package biblioteca.java.demo.model;
 
-import jakarta.persistence.*;
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
 
 @Entity
-@Table(name= "FUNCIONARIOS" )
 
 
     public class Funcionario extends Usuario {
@@ -15,7 +18,7 @@ import jakarta.persistence.*;
 
         @OneToMany
         @JoinColumn (name= "id_funcionario_fk")
-        private Usuario usuario;
+        private List<Usuario> usuario;
 
     //Getter e setter
     public String getDataAdmissao() {

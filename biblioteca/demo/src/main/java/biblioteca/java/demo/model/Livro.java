@@ -1,11 +1,16 @@
 package biblioteca.java.demo.model;
 
-import jakarta.persistence.*;
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "LIVROS")
 
-public class Livro {
+public class Livro extends AbstractEntity<Long> {
    
     private String autor;
     private String isbn;
@@ -15,7 +20,7 @@ public class Livro {
 
     @OneToMany
     @JoinColumn (name= "id_livro_fk")
-    private Usuario usuario;    
+    private List<Usuario> usuario;    
 
     //get e set
     public String getAutor() {

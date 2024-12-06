@@ -1,11 +1,12 @@
 package biblioteca.java.demo.model;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "USUARIOS")
 
 
-public class Usuario {
+public class Usuario extends AbstractEntity<Long> {
     private String nome;
     private String cpf;
     private String senha;

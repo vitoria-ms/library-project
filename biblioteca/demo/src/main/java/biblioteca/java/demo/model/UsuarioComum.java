@@ -1,11 +1,9 @@
 
 package biblioteca.java.demo.model;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
 
 
 @Entity
-@Table(name = "USUARIOSCOMUNS")
-
 
 public class UsuarioComum extends Usuario {
     
